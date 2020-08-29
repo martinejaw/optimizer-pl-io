@@ -72,6 +72,7 @@ function ModeloSimpleSinAgotamientoPorLote(D,q,K,PorcCostoProd,T,P,bi,Cientrada)
             ctprod = CostoTotalProductoComun(cprod, D);
             ctalm = CostoTotalAlmacenamiento(qo,T,C1);
             cte = ctprep + ctprod + ctalm;
+            let model = new Object();
             model.cte = cte;
             model.qo = qo;
             model.bi = bi[x];
@@ -102,5 +103,6 @@ function ModeloSimpleSinAgotamientoPorLote(D,q,K,PorcCostoProd,T,P,bi,Cientrada)
     //q[x-1] = limite inferior que se tomo el qo
     //bi[x-1] = el precio que tomo el qo
 }
-
+result = ModeloSimpleSinAgotamientoPorLote(960,[500,300,0],20,0.20,1,0,[9.7,9.8,10],0);
+console.log(result);
 module.exports = ModeloSimpleSinAgotamientoPorLote;
