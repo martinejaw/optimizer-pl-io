@@ -106,11 +106,7 @@ class Configuration extends React.Component {
                   handleDs={this.handleDs}
                 /></CardBody>
             </Card>
-            <UncontrolledPopover placement="right" target="B" trigger="hover">
-              <PopoverBody>
-                <p>Los valores de los costos de producto deben estar ordenados ascendentemente.</p>
-              </PopoverBody>
-            </UncontrolledPopover>
+
           </Row>
           <Row>
             <Card outline color="secondary" className="w-100 mt-3" id="Q">
@@ -125,11 +121,6 @@ class Configuration extends React.Component {
                   handleQs={this.handleQs}
                 /></CardBody>
             </Card>
-            <UncontrolledPopover placement="right" target="Q" trigger="hover">
-              <PopoverBody>
-                <p>Los valores de los limites de lotes deben estar ordenados descendentemente.</p>
-              </PopoverBody>
-            </UncontrolledPopover>
           </Row>
         </Col>
       )
